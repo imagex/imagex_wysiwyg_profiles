@@ -10,14 +10,14 @@
 function imagex_wysiwyg_profiles_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer ckeditor.
+  // Exported permission: 'administer ckeditor'.
   $permissions['administer ckeditor'] = array(
     'name' => 'administer ckeditor',
     'roles' => array(),
     'module' => 'ckeditor',
   );
 
-  // Exported permission: customize ckeditor.
+  // Exported permission: 'customize ckeditor'.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
     'roles' => array(),
