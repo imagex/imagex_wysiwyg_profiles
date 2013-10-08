@@ -1,4 +1,4 @@
-## WYSIWYG and Text Formats
+## WYSIWYG Profiles
 
 [ TODO: Add brief description of this component. ]
 
