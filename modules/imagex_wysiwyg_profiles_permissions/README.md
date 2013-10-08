@@ -2,9 +2,11 @@
 
 [ TODO: Add brief description regarding this ]
 
-### Dependencies
+### Requirements
 
-* [ImageX User Roles](http://github.com/imagex/imagex_user_roles)
+The following listed modules below are required dependencies of this component.
+
+* ImageX Component: [User Roles](http://github.com/imagex/imagex_user_roles) (>= 7.x-dev)
 
 ## License
 
