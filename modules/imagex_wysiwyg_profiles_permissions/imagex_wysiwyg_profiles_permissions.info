@@ -1,0 +1,12 @@
+name = WYSIWYG and Text Format Permissions
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_wysiwyg_profiles_permissions
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = imagex_user_roles
+dependencies[] = imagex_wysiwyg_profiles
+features[features_api][] = api:2
+features[user_permission][] = use text format filtered_html
+features[user_permission][] = use text format full_html
