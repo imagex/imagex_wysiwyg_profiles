@@ -8,7 +8,6 @@ project = imagex_wysiwyg_profiles_codehighlighter
 dependencies[] = imagex_wysiwyg_profiles
 dependencies[] = ctools
 dependencies[] = features
-dependencies[] = geshifield
 dependencies[] = geshifilter
 dependencies[] = strongarm
 dependencies[] = libraries
