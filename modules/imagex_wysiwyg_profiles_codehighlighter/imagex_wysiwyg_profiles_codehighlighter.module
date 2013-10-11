@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WYSIWYG Code Highlighter feature.
+ */
+
+include_once 'imagex_wysiwyg_profiles_codehighlighter.features.inc';
