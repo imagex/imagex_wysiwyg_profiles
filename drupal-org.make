@@ -4,7 +4,7 @@ core = 7.x
 ; Contributed modules.
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][version] = "1.13"
+projects[ckeditor][version] = "1.x-dev"
 ; projects[ckeditor][version] = "1.x-dev"
 ; projects[ckeditor][patch][] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor_1504696_58.patch"
 ; projects[ckeditor][patch][] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor-ckeditor_features_format-2043365-6.patch"

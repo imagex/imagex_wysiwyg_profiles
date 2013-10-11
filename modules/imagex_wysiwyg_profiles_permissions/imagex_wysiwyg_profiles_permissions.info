@@ -7,6 +7,7 @@ project = imagex_wysiwyg_profiles_permissions
 dependencies[] = ckeditor
 dependencies[] = features
 dependencies[] = filter
+dependencies[] = imagex_user_roles
 dependencies[] = imagex_wysiwyg_profiles
 features[features_api][] = api:2
 features[user_permission][] = administer ckeditor

@@ -1,6 +1,6 @@
 ## WYSIWYG Profiles
 
-This component enables the ability to manage content through a common graphical interface allowing for unique styling to occur without the knowledge of markup technologies like HTML and CSS.
+[ TODO: Add brief description of this component. ]
 
 ### Requirements
 
