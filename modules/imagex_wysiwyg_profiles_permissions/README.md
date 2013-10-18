@@ -1,12 +1,14 @@
-## WYSIWYG Profiles Permissions
+## WYSIWYG Profile Permissions
 
-[ TODO: Add brief description regarding this ]
+This extension module of the WYSIWYG Profiles component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles).
 
 ### Requirements
 
-The following listed modules below are required dependencies of this component.
+The following listed modules and libraries below are required dependencies of this component.
 
-* ImageX Component: [User Roles](http://github.com/imagex/imagex_user_roles) (>= 7.x-dev)
+#### Modules
+
+* ImageX Component: [WYSIWYG Profiles](http://github.com/imagex/imagex_wysiwyg_profiles) (>= 1.x-dev)
 
 ## License
 

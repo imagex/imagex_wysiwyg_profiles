@@ -15,8 +15,15 @@ The following listed modules and libraries below are required dependencies of th
 
 #### Libraries
 
-* Library: [CKEditor](http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2.1/ckeditor_4.2.1_standard.zip)
+* Library: [CKEditor](http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2.1/ckeditor_4.2.1_full.zip)
 * Library: [HTML Purifier](http://htmlpurifier.org/releases/htmlpurifier-4.5.0.zip)
+
+### Extension Modules
+
+Extension modules are enhancers for this component. They are:
+
+* **Permissions**
+* **Syntax Highlighter**
 
 ## License
 
