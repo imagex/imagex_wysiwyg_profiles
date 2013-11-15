@@ -1,4 +1,5 @@
 name = WYSIWYG and Text Formats
+description = Bundles settings for Ckeditor profiles.
 core = 7.x
 package = ImageX
 version = 7.x-1.0
