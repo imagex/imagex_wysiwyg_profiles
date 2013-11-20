@@ -3,3 +3,98 @@
  * @file
  * Drupal needs this blank file.
  */
+
+/**
+ * Implements hook_enable().
+ *
+ * Deletes ckeditor's default profiles.
+ */
+function imagex_wysiwyg_profiles_enable() {
+
+  if (module_exists('ckeditor')) {
+
+    module_load_include('inc', 'ckeditor', 'includes/ckeditor.admin');
+
+    ckeditor_profile_delete('Full');
+    ckeditor_profile_delete('Advanced');
+
+  }
+
+}
+
+/**
+ * Implements of hook_element_info_alter().
+ *
+ * Adds a callback to load custom ckeditor.config.js overrides.
+ */
+function imagex_wysiwyg_profiles_element_info_alter(&$types) {
+
+  $types['text_format']['#pre_render'][] = 'isu_input_format_pre_render_text_format';
+
+}
+
+/**
+ * This function adds custom ckeditor.config.js configurations when
+ * fitlered_html text format is loaded.
+ *
+ * @param $element
+ *   A fully populated form element to add the editor to.
+ * @return
+ *   The same $element.
+ */
+function isu_input_format_pre_render_text_format($element) {
+
+  static $init = FALSE;
+
+  // TODO: This approach doesn't work when the edit form loads with a different
+  //       default text format. For instance, if your node is set to Full HTML
+  //       and you change it to Filtered HTML during the editing process, the
+  //       custom ckeditor.config.js here is not loaded and the config
+  //       overrides it creates are missing.
+  //
+  //       To deal with this, checking for the text format to load the js only
+  //       if it's filtered_html is commented out here. This is not good
+  //       though because the js is then being loaded when we don't need it.
+  //       In addition, in a different site, this could be a problem if you
+  //       had different ckeditor profiles and needed different text formats
+  //       to have their own ckeditor.config.js overrides. To solve this, will
+  //       need to figure out another way of including the js here on the fly
+  //       (look at how ckeditor itself does it), or just scrap this approach
+  //       and deal with overriding the ckeditor module's version or putting
+  //       a version in the theme.
+
+  // if ($element['#format'] == 'filtered_html') {
+
+    if ($init === FALSE) {
+
+      drupal_add_js(drupal_get_path('module', 'imagex_wysiwyg_profiles') . '/js/ckeditor.config.js', array('scope' => 'footer'));
+
+      $init = TRUE;
+
+    }
+
+  // }
+
+  return $element;
+
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ *
+ * Overrides ordinariy file_link theme output for this view so that the link
+ * is hidden because the view already includes its own link formatted
+ * differently.
+ */
+function imagex_wysiwyg_profiles_preprocess_views_view(&$vars) {
+
+   $view = $vars['view'];
+
+   // Make sure it's the correct view
+  if($view->name == 'media_default') {
+
+     drupal_add_css(drupal_get_path('module', 'imagex_wysiwyg_profiles') . '/css/media_default.css');
+
+  }
+
+}
