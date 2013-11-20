@@ -1,0 +1,7 @@
+/**
+ * @file Overrides for theme file_link in media_default view.
+ */
+
+.media-thumbnail span.file a {
+  display:none;
+}
