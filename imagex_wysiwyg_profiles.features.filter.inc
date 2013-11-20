@@ -23,62 +23,6 @@ function imagex_wysiwyg_profiles_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
-      'geshifilter' => array(
-        'weight' => -49,
-        'status' => 1,
-        'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
-          'filter_html_help' => 1,
-          'filter_html_nofollow' => 0,
-          'general_tags' => array(
-            'geshifilter_tags_filtered_html' => 'code blockcode',
-            'geshifilter_tag_styles_filtered_html' => array(
-              2 => 2,
-              1 => 0,
-              4 => 0,
-              8 => 0,
-            ),
-          ),
-          'per_language_settings' => array(
-            'table' => array(
-              'header' => array(
-                0 => 'Language',
-                1 => 'GeSHi language code',
-                2 => 'Tag/language attribute value',
-              ),
-              'languages' => array(
-                'c' => array(
-                  'geshifilter_language_tags_c_filtered_html' => '<c>',
-                ),
-                'cpp' => array(
-                  'geshifilter_language_tags_cpp_filtered_html' => '<cpp>',
-                ),
-                'drupal5' => array(
-                  'geshifilter_language_tags_drupal5_filtered_html' => '<drupal5>',
-                ),
-                'drupal6' => array(
-                  'geshifilter_language_tags_drupal6_filtered_html' => '<drupal6>',
-                ),
-                'java' => array(
-                  'geshifilter_language_tags_java_filtered_html' => '<java>',
-                ),
-                'javascript' => array(
-                  'geshifilter_language_tags_javascript_filtered_html' => '<javascript>',
-                ),
-                'php' => array(
-                  'geshifilter_language_tags_php_filtered_html' => '<php>',
-                ),
-                'python' => array(
-                  'geshifilter_language_tags_python_filtered_html' => '<python>',
-                ),
-                'ruby' => array(
-                  'geshifilter_language_tags_ruby_filtered_html' => '<ruby>',
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
       'filter_autop' => array(
         'weight' => -48,
         'status' => 1,
@@ -302,62 +246,6 @@ news',
         'weight' => -50,
         'status' => 1,
         'settings' => array(),
-      ),
-      'geshifilter' => array(
-        'weight' => -49,
-        'status' => 1,
-        'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
-          'filter_html_help' => 1,
-          'filter_html_nofollow' => 0,
-          'general_tags' => array(
-            'geshifilter_tags_full_html' => 'code blockcode',
-            'geshifilter_tag_styles_full_html' => array(
-              1 => 1,
-              2 => 2,
-              4 => 0,
-              8 => 0,
-            ),
-          ),
-          'per_language_settings' => array(
-            'table' => array(
-              'header' => array(
-                0 => 'Language',
-                1 => 'GeSHi language code',
-                2 => 'Tag/language attribute value',
-              ),
-              'languages' => array(
-                'c' => array(
-                  'geshifilter_language_tags_c_full_html' => '<c>',
-                ),
-                'cpp' => array(
-                  'geshifilter_language_tags_cpp_full_html' => '<cpp>',
-                ),
-                'drupal5' => array(
-                  'geshifilter_language_tags_drupal5_full_html' => '<drupal5>',
-                ),
-                'drupal6' => array(
-                  'geshifilter_language_tags_drupal6_full_html' => '<drupal6>',
-                ),
-                'java' => array(
-                  'geshifilter_language_tags_java_full_html' => '<java>',
-                ),
-                'javascript' => array(
-                  'geshifilter_language_tags_javascript_full_html' => '<javascript>',
-                ),
-                'php' => array(
-                  'geshifilter_language_tags_php_full_html' => '<php>',
-                ),
-                'python' => array(
-                  'geshifilter_language_tags_python_full_html' => '<python>',
-                ),
-                'ruby' => array(
-                  'geshifilter_language_tags_ruby_full_html' => '<ruby>',
-                ),
-              ),
-            ),
-          ),
-        ),
       ),
       'filter_url' => array(
         'weight' => -48,
