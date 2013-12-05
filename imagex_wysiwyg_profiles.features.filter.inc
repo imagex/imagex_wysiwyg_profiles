@@ -16,7 +16,7 @@ function imagex_wysiwyg_profiles_filter_default_formats() {
     'name' => 'Filtered HTML',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -10,
     'filters' => array(
       'media_filter' => array(
         'weight' => -50,
@@ -240,7 +240,7 @@ news',
     'name' => 'Full HTML',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -8,
     'filters' => array(
       'media_filter' => array(
         'weight' => -50,
@@ -294,7 +294,7 @@ news',
     'name' => 'Plain text',
     'cache' => 1,
     'status' => 1,
-    'weight' => 10,
+    'weight' => -6,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,
