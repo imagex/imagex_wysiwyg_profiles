@@ -84,6 +84,7 @@ th',
             'Null_Cache.SerializerPath' => 1,
             'Cache.SerializerPermissions' => 493,
             'Core.AggressivelyFixLt' => 1,
+            'Core.AllowHostnameUnderscore' => 0,
             'Core.CollectErrors' => 0,
             'Core.ColorKeywords' => 'maroon:#800000
 red:#FF0000
@@ -126,7 +127,7 @@ style',
             'Null_Filter.ExtractStyleBlocks.TidyImpl' => 1,
             'Filter.ExtractStyleBlocks' => 0,
             'Filter.YouTube' => 0,
-            'HTML.Allowed' => '*[style]
+            'HTML.Allowed' => '*[style|class|id]
 a[href|target|title|name|id]
 em
 strong
