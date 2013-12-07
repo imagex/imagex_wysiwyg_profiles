@@ -47,7 +47,7 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
             'breakBeforeClose' => 0,
           ),
         ),
-        'css_mode' => 'none',
+        'css_mode' => 'theme',
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
