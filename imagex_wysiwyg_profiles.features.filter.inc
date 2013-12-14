@@ -317,5 +317,7 @@ news',
     ),
   );
 
+  features_alter_code('filter', $formats);
+
   return $formats;
 }
