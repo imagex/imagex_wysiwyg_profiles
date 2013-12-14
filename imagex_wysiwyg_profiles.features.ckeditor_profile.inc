@@ -20,11 +20,11 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
         'toolbar' => '[
     [\'Source\'],
     [\'PasteText\',\'PasteFromWord\'],
-    [\'Media\',\'MediaEmbed\',\'Table\',\'SpecialChar\',\'HorizontalRule\',\'DrupalBreak\',\'-\',\'RemoveFormat\',\'Maximize\'],
+    [\'MediaEmbed\',\'Table\',\'SpecialChar\',\'HorizontalRule\',\'DrupalBreak\',\'-\',\'RemoveFormat\',\'Maximize\'],
     \'/\',
     [\'Undo\',\'Redo\'],
     [\'Bold\',\'Italic\',\'Underline\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'-\',\'Link\',\'Unlink\'],
-    [\'Format\',\'Styles\']
+    [\'Format\',\'Styles\',\'CreateDiv\']
 ]',
         'expand' => 't',
         'width' => '100%',
@@ -194,5 +194,8 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
       'input_formats' => array(),
     ),
   );
+
+  features_alter_code('ckeditor_profile', $data);
+
   return $data;
 }
