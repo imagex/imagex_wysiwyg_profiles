@@ -20,7 +20,7 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
         'toolbar' => '[
     [\'Source\'],
     [\'PasteText\',\'PasteFromWord\'],
-    [\'MediaEmbed\',\'Table\',\'SpecialChar\',\'HorizontalRule\',\'DrupalBreak\',\'-\',\'RemoveFormat\',\'Maximize\'],
+    [\'Media\',\'MediaEmbed\',\'Table\',\'SpecialChar\',\'HorizontalRule\',\'DrupalBreak\',\'-\',\'RemoveFormat\',\'Maximize\'],
     \'/\',
     [\'Undo\',\'Redo\'],
     [\'Bold\',\'Italic\',\'Underline\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'-\',\'Link\',\'Unlink\'],
