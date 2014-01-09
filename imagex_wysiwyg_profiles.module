@@ -10,16 +10,11 @@
  * Deletes ckeditor's default profiles.
  */
 function imagex_wysiwyg_profiles_enable() {
-
   if (module_exists('ckeditor')) {
-
     module_load_include('inc', 'ckeditor', 'includes/ckeditor.admin');
-
     ckeditor_profile_delete('Full');
     ckeditor_profile_delete('Advanced');
-
   }
-
 }
 
 /**
@@ -28,9 +23,7 @@ function imagex_wysiwyg_profiles_enable() {
  * Adds a callback to load custom ckeditor.config.js overrides.
  */
 function imagex_wysiwyg_profiles_element_info_alter(&$types) {
-
   $types['text_format']['#pre_render'][] = 'isu_input_format_pre_render_text_format';
-
 }
 
 /**

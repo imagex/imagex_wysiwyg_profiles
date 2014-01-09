@@ -96,7 +96,7 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
         ),
       ),
       'input_formats' => array(
-        'filtered_html' => 'Filtered HTML',
+        'full_html' => 'Full HTML',
       ),
     ),
     'CKEditor Global Profile' => array(
@@ -169,12 +169,7 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
             'path' => '%plugin_dir%media/',
-            'buttons' => array(
-              'Media' => array(
-                'label' => 'Media',
-                'icon' => 'images/icon.gif',
-              ),
-            ),
+            'buttons' => FALSE,
             'default' => 'f',
           ),
           'mediaembed' => array(
@@ -191,7 +186,9 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(),
+      'input_formats' => array(
+        'filtered_html' => 'Filtered HTML',
+      ),
     ),
   );
 
