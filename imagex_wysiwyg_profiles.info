@@ -15,7 +15,6 @@ features[ckeditor_profile][] = CKEditor Global Profile
 features[ckeditor_profile][] = Simple
 features[features_api][] = api:2
 features[features_override_items][] = ckeditor_profile.Advanced
-features[features_override_items][] = ckeditor_profile.Simple
 features[filter][] = filtered_html
 features[filter][] = full_html
 features[filter][] = plain_text
