@@ -2,20 +2,26 @@ api = 2
 core = 7.x
 
 ; Contributed modules.
+projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][version] = "1.x-dev"
-projects[ckeditor][patch][] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor_1504696_85.patch"
+projects[ckeditor][download][type] = "git"
+projects[ckeditor][download][revision] = "57245a9"
+projects[ckeditor][download][branch] = "7.x-1.x"
+; Integration with Media 2.x
+; http://drupal.org/node/1504696
+projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-2159403-6.patch"
+; External plugin declarations are redundant.
+; http://drupal.org/comment/8284591#comment-8284591
+projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
+projects[ckeditor][patch][1649464] = "http://drupal.org/files/issues/ckeditor-hook_into_media_admin-1649464-8141819_0.patch"
 projects[htmlpurifier][type] = "module"
 projects[htmlpurifier][subdir] = "contrib"
 projects[htmlpurifier][version] = "1.0"
-projects[libraries][type] = "module"
-projects[libraries][subdir] = "contrib"
-projects[libraries][version] = "2.1"
 
 ; Libraries.
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2.3/ckeditor_4.2.3_full.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[htmlpurifier][download][type] = "file"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.6.0.zip"
