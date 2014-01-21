@@ -13,7 +13,7 @@ projects[ckeditor][download][branch] = "7.x-1.x"
 projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-2159403-6.patch"
 ; External plugin declarations are redundant.
 ; http://drupal.org/comment/8284591#comment-8284591
-projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
+; projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
 projects[ckeditor][patch][1649464] = "http://drupal.org/files/issues/ckeditor-hook_into_media_admin-1649464-8141819_0.patch"
 projects[htmlpurifier][type] = "module"
 projects[htmlpurifier][subdir] = "contrib"
