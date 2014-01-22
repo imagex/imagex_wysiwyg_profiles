@@ -11,7 +11,7 @@ projects[ckeditor][download][branch] = "7.x-1.x"
 ; Integration with Media 2.x
 ; http://drupal.org/node/1504696
 projects[ckeditor][patch][1504696] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor-accomodate-latest-media-changes-2159403-6.patch"
-projects[ckeditor][patch][1649464] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor-hook_into_media_admin-1649464-8141819_0.patch"
+projects[ckeditor][patch][1649464] = "https://raw.github.com/imagex/imagex_patches/7.x/contrib/ckeditor/ckeditor-hook_into_media_admin-1649464-9.patch"
 projects[htmlpurifier][type] = "module"
 projects[htmlpurifier][subdir] = "contrib"
 projects[htmlpurifier][version] = "1.0"
