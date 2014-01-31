@@ -23,7 +23,7 @@ function imagex_wysiwyg_profiles_enable() {
  * Adds a callback to load custom ckeditor.config.js overrides.
  */
 function imagex_wysiwyg_profiles_element_info_alter(&$types) {
-  $types['text_format']['#pre_render'][] = 'isu_input_format_pre_render_text_format';
+  $types['text_format']['#pre_render'][] = 'imagex_wysiwyg_profiles_pre_render_text_format';
 }
 
 /**
@@ -35,7 +35,7 @@ function imagex_wysiwyg_profiles_element_info_alter(&$types) {
  * @return
  *   The same $element.
  */
-function isu_input_format_pre_render_text_format($element) {
+function imagex_wysiwyg_profiles_pre_render_text_format($element) {
 
   static $init = FALSE;
 

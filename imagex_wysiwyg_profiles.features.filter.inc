@@ -243,6 +243,11 @@ news',
     'status' => 1,
     'weight' => -10,
     'filters' => array(
+      'media_filter' => array(
+        'weight' => -1000,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_url' => array(
         'weight' => -50,
         'status' => 1,
@@ -261,7 +266,7 @@ news',
         'settings' => array(),
       ),
       'htmlpurifier_advanced' => array(
-        'weight' => -44,
+        'weight' => 1000,
         'status' => 1,
         'settings' => array(
           'htmlpurifier_help' => 1,
@@ -284,7 +289,7 @@ news',
             'AutoFormat.AutoParagraph' => 1,
             'AutoFormat.Custom' => '',
             'AutoFormat.DisplayLinkURI' => 0,
-            'AutoFormat.Linkify' => 1,
+            'AutoFormat.Linkify' => 0,
             'AutoFormat.PurifierLinkify.DocURL' => '#%s',
             'AutoFormat.PurifierLinkify' => 0,
             'AutoFormat.RemoveEmpty.RemoveNbsp.Exceptions' => 'td
@@ -347,10 +352,50 @@ style',
             'Null_Filter.ExtractStyleBlocks.TidyImpl' => 1,
             'Filter.ExtractStyleBlocks' => 0,
             'Filter.YouTube' => 0,
-            'Null_HTML.Allowed' => 1,
+            'HTML.Allowed' => '*[style|class|id]
+a[href|target|title|name|id]
+em
+strong
+strike
+sub
+sup
+i
+b
+ul
+ol
+li
+dl
+dt
+dd
+p[align]
+br
+hr
+div[align|class]
+span
+address
+blockquote
+pre
+cite
+code
+h2
+h3
+h4
+h5
+h6
+table[width|cellpadding|cellspacing|border]
+tr[align|valign]
+td[align|valign|width]
+th[align|valign|width]
+thead
+tbody
+tfoot
+img[src|width|height|alt|title]
+iframe[src|class|width|height|frameborder|title|scrolling]
+video[width|height|class|controls]
+source[src|type]',
             'Null_HTML.AllowedAttributes' => 1,
             'HTML.AllowedComments' => '',
-            'Null_HTML.AllowedCommentsRegexp' => 1,
+            'HTML.AllowedCommentsRegexp' => '/^break$/',
             'Null_HTML.AllowedElements' => 1,
             'Null_HTML.AllowedModules' => 1,
             'HTML.Attr.Name.UseCDATA' => 0,
@@ -366,13 +411,15 @@ CommonAttributes',
             'HTML.Doctype' => 'XHTML 1.0 Transitional',
             'HTML.FlashAllowFullScreen' => 0,
             'HTML.ForbiddenAttributes' => '',
-            'HTML.ForbiddenElements' => '',
+            'HTML.ForbiddenElements' => 'script
+link
+style',
             'HTML.MaxImgLength' => 1200,
             'HTML.Nofollow' => 0,
             'HTML.Parent' => 'div',
             'HTML.Proprietary' => 0,
             'HTML.SafeEmbed' => 0,
-            'HTML.SafeIframe' => 0,
+            'HTML.SafeIframe' => 1,
             'HTML.SafeObject' => 0,
             'HTML.SafeScripting' => '',
             'HTML.Strict' => 0,
@@ -384,7 +431,7 @@ CommonAttributes',
             'HTML.XHTML' => 1,
             'Output.CommentScriptContents' => 1,
             'Output.FixInnerHTML' => 1,
-            'Output.FlashCompat' => 0,
+            'Output.FlashCompat' => 1,
             'Null_Output.Newline' => 1,
             'Output.SortAttr' => 0,
             'Output.TidyFormat' => 0,
@@ -401,21 +448,16 @@ news',
             'URI.DisableExternal' => 0,
             'URI.DisableExternalResources' => 0,
             'URI.DisableResources' => 0,
-            'URI.Host' => 'localhost',
+            'Null_URI.Host' => 1,
             'URI.HostBlacklist' => '',
             'URI.MakeAbsolute' => 0,
             'Null_URI.Munge' => 1,
             'URI.MungeResources' => 0,
             'Null_URI.MungeSecretKey' => 1,
             'URI.OverrideAllowedSchemes' => 1,
-            'Null_URI.SafeIframeRegexp' => 1,
+            'URI.SafeIframeRegexp' => '%^(http://|https://|//)(www.youtube.|player.vimeo.)%',
           ),
         ),
-      ),
-      'media_filter' => array(
-        'weight' => -42,
-        'status' => 1,
-        'settings' => array(),
       ),
     ),
   );

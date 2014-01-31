@@ -8,6 +8,8 @@
  * Implements hook_ckeditor_profile_defaults().
  */
 function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
+  global $base_path;
+
   $data = array(
     'Advanced' => array(
       'name' => 'Advanced',
@@ -65,30 +67,18 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
-            'path' => '%plugin_dir%drupalbreaks/',
-            'buttons' => array(
-              'DrupalBreak' => array(
-                'label' => 'DrupalBreak',
-                'icon' => 'images/drupalbreak.png',
-              ),
-            ),
+            'path' => $base_path . drupal_get_path('module', 'ckeditor') . '/plugins/drupalbreaks/',
+            'buttons' => FALSE,
             'default' => 't',
           ),
           'media' => array(
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%plugin_dir%media/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
-          'mediaembed' => array(
-            'name' => 'mediaembed',
-            'desc' => 'Plugin for inserting Drupal embeded media',
-            'path' => '%plugin_dir%mediaembed/',
+            'path' => $base_path . drupal_get_path('module', 'media_wysiwyg') . '/wysiwyg_plugins/media_ckeditor/',
             'buttons' => array(
-              'MediaEmbed' => array(
-                'label' => 'MediaEmbed',
-                'icon' => 'images/icon.png',
+              'Media' => array(
+                'icon' => 'images/icon.gif',
+                'label' => 'Add media',
               ),
             ),
             'default' => 'f',
@@ -168,18 +158,11 @@ function imagex_wysiwyg_profiles_ckeditor_profile_defaults() {
           'media' => array(
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%plugin_dir%media/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
-          'mediaembed' => array(
-            'name' => 'mediaembed',
-            'desc' => 'Plugin for inserting Drupal embeded media',
-            'path' => '%plugin_dir%mediaembed/',
+            'path' => $base_path . drupal_get_path('module', 'media_wysiwyg') . '/wysiwyg_plugins/media_ckeditor/',
             'buttons' => array(
-              'MediaEmbed' => array(
-                'label' => 'MediaEmbed',
-                'icon' => 'images/icon.png',
+              'Media' => array(
+                'icon' => 'images/icon.gif',
+                'label' => 'Add media',
               ),
             ),
             'default' => 'f',
