@@ -5,9 +5,6 @@ core = 7.x
 projects[geshifilter][type] = "module"
 projects[geshifilter][subdir] = "contrib"
 projects[geshifilter][version] = "1.2"
-projects[libraries][type] = "module"
-projects[libraries][subdir] = "contrib"
-projects[libraries][version] = "2.1"
 
 ; Libraries.
 libraries[geshi][download][type] = "get"
