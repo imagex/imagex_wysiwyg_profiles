@@ -390,9 +390,7 @@ thead
 tbody
 tfoot
 img[src|width|height|alt|title]
-iframe[src|class|width|height|frameborder|title|scrolling]
-video[width|height|class|controls]
-source[src|type]',
+iframe[src|class|width|height|frameborder|title|scrolling]',
             'Null_HTML.AllowedAttributes' => 1,
             'HTML.AllowedComments' => '',
             'HTML.AllowedCommentsRegexp' => '/^break$/',
